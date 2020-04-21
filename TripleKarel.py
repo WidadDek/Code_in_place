@@ -18,8 +18,23 @@ def main():
     starting to write your own code. You should also delete this
     comment and replace it with a better, more descriptive one.
     """
-    pass
+    for j in range(3):
+        for i in range(3):
+            paint_side()
+            if (i==2):
+                turn_right()
+            else:
+                turn_left()
+                move()
+    turn_left()
 
+def paint_side():
+    while left_is_blocked():
+        put_beeper()
+        move()
+def turn_right():
+    for i in range(3):
+        turn_left()
 
 # There is no need to edit code beyond this point
 

@@ -7,10 +7,8 @@ from karel.stanfordkarel import *
 def main():
     move()
     build_hospital()
-    move()
-    move()
-    move()
-    move()
+    for i in range(4):
+        move()
     build_hospital()
     move()
     move()

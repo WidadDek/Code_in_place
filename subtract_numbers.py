@@ -13,8 +13,10 @@ def main():
     your own code. You should also delete this comment and replace
     it with a better, more descriptive one.
     """
-    pass
-
+    print('This program subtracts one number from another.')
+    num1 = float(input('enter first number : '))
+    num2 = float(input('enter second number : '))
+    print('the result is '+ str(num1-num2))
 
 # This provided line is required at the end of a Python file
 # to call the main() function.

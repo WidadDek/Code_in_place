@@ -4,16 +4,25 @@ File: nimm.py
 Add your comments here.
 """
 
+NUM_STONES = 20
+
 
 def main():
-    """
-    You should write your code for this program in this function.
-    Make sure to delete the 'pass' line before starting to write
-    your own code. You should also delete this comment and replace
-    it with a better, more descriptive one.
-    """
-    pass
+    cpt = NUM_STONES
+    player_num = 1
+    while cpt != 0:
+        print("There are " + str(cpt) + " stones left")
+        to_remove = int(input("Player " + str(player_num) + " would you like to remove 1 or 2 ? "))
+        if player_num == 1:
+            player_num = 2
+        else:
+            player_num = 1
+        while to_remove < 1 or to_remove > 2:
+            to_remove = int(input("Please input 1 or 2:"))
 
+        cpt -= to_remove
+
+    print("Player " + str(player_num) + " wins !")
 
 # This provided line is required at the end of a Python file
 # to call the main() function.

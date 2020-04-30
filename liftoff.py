@@ -11,7 +11,7 @@ def main():
     for i in range(NUM_RANDOM):
         print(str(10-i))
 
-    print('Liftoff!!')
+    print('Liftoff!')
 
 # This provided line is required at the end of a Python file
 # to call the main() function.

@@ -14,9 +14,9 @@ def main():
     it with a better, more descriptive one.
     """
     print('This program subtracts one number from another.')
-    num1 = float(input('enter first number : '))
-    num2 = float(input('enter second number : '))
-    print('the result is '+ str(num1-num2))
+    num1 = float(input('Enter first number: '))
+    num2 = float(input('Enter second number: '))
+    print('The result is '+ str(num1-num2))
 
 # This provided line is required at the end of a Python file
 # to call the main() function.

@@ -15,9 +15,8 @@ def main():
         num1 = random.randint(MIN_RANDOM, MAX_RANDOM)
         num2 = random.randint(MIN_RANDOM, MAX_RANDOM)
         correct = num1 + num2
-        print('What is ' + str(num1) + '+' + str(num2) + '?')
+        print('What is ' + str(num1) + ' + ' + str(num2) + '?')
         answer = int(input('Your answer: '))
-        print(str(answer))
         if answer != correct:
             cpt = 0
             print('Incorrect. The expected answer is ' + str(correct))
